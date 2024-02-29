@@ -1,35 +1,83 @@
-html {
+/* Layout */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
+}
     
-    body{
+body{
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    border: 1px solid black;
+    grid-template-columns: 260px 4fr;
     height: 100vh;
-    }
+}
     
-    main {
+main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    }
+}
+
+.side-bar{
+    display: grid;
+    grid-template-rows: 70px 250px 500px;
+}
+
+.side-bar > div {
+    height: min-content;
+    display: flex;
+    gap: 5px;
+    padding: 15px;
+}
+
+.side-bar > ul {
+    padding-left: 1rem;
+}
+
+.side-bar li {
+    margin: 15px;
+    display: flex;
+}
+.side-bar img{
+    width: 18px;
+    margin-right: 5px;
+    fill: #fafafa;
+}
+#hex-logo{
+    width: 35px;
+}
     
-    .project-cards {
+.project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: 70px 200px;
     grid-auto-rows: 200px;
     gap: 10px;
+}
     
+.project-cards > h2 {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+}
+    
+/* color and font */
+
+.side-bar {
+    background-color: #faeed1;
+    color: #0f172a;
+}
+
+.side-bar > ul{
+    font-size: 1.1em;
+    font-weight: 600;
+    list-style: none;
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: #0f172a;
+}
+
+
+
+.project-cards {
     font-size: 16px;
-    }
-    
-    .project-cards > h2 {
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
-    }
-    
-    .project-cards > .card {
-    }
+}
