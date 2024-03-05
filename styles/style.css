@@ -214,3 +214,20 @@ main {
     padding: 1rem;
     font-size: 14px;
 }
+
+/*Trending*/
+.trending {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: #dde4ea;
+    padding: 1rem;
+}
+
+.trending h2 {
+    align-self: center;
+}
+
+.account-others {
+    background-color: #fafafa;
+    padding: 0.5rem;
+}
