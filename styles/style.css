@@ -196,3 +196,21 @@ main {
 .card > p {
     color: #1C1D1E;
 }
+
+/*Annoucements*/
+.annoucements {
+    background-color: #dde4ea;
+    display: grid;
+    padding-top: 3rem;
+}
+
+.annoucements h2 {
+    margin-left: 1rem;
+}
+
+.annoucement {
+    background-color: #fafafa;
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 14px;
+}
